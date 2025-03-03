@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "lodash": "^4.17.21"
+  },
+  "name": "miniproject1_signup_page",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hellojuhyoung/miniProject1_signup_page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hellojuhyoung/miniProject1_signup_page/issues"
+  },
+  "homepage": "https://github.com/hellojuhyoung/miniProject1_signup_page#readme",
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}

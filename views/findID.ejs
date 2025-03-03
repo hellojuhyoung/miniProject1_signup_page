@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find Identification</title>
+  </head>
+  <body>
+    <h1>hello world find ID</h1>
+    <div id="findIDContainer">
+      <form id="findIDForm">
+        <div id="phoneNumContainer">
+          전화번호
+          <input
+            type="tel"
+            id="phone1"
+            name="phone1"
+            maxlength="3"
+            placeholder="010"
+            size="3"
+          />
+          -
+          <input
+            type="tel"
+            id="phone2"
+            name="phone2"
+            maxlength="4"
+            placeholder="xxxx"
+            size="4"
+          />
+          -
+          <input
+            type="tel"
+            id="phone3"
+            name="phone3"
+            maxlength="4"
+            placeholder="xxxx"
+            size="4"
+          />
+          <button type="button" id="findButton">Find</button>
+          <div id="emailDisplay"></div>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="/javascript/findID.js"></script>
+</html>

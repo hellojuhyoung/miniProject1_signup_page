@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="/javascript/signup.js"></script>
+    <link rel="stylesheet" href="/css/signup.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>singup</title>
+  </head>
+  <body>
+    <div id="signupContainer">
+      <h3>회원가입</h3>
+      <form id="signupForm" action="/signup/form" method="post">
+        <div id="infoContainer">
+          <input
+            type="email"
+            placeholder="email address"
+            id="id"
+            name="id"
+            required
+          />
+          <div id="emailError" name="emailError"></div>
+          <button type="button" onclick="confirmEmail()">중복확인</button>
+          <input
+            type="text"
+            placeholder="name"
+            id="name"
+            name="name"
+            required
+          />
+          <div id="nameError" name="nameError"></div>
+          <input
+            type="text"
+            placeholder="password"
+            id="password"
+            name="password"
+            required
+          />
+          <input
+            type="text"
+            placeholder="re-write your password"
+            id="re-password"
+            name="re-password"
+            required
+          />
+          <div id="passwordError" name="passwordError"></div>
+          <button type="button" onclick="confirmPassword()">
+            비밀번호 확인
+          </button>
+        </div>
+        <br />
+        <div id="genderContainer">
+          성별
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="male">남</label>
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">여</label> <br />
+          <div id="genderError" name="genderError"></div>
+        </div>
+        <br />
+        <div id="phoneNumContainer">
+          전화번호
+          <input
+            type="tel"
+            id="phone1"
+            name="phone1"
+            maxlength="3"
+            placeholder="010"
+            size="3"
+          />
+          -
+          <input
+            type="tel"
+            id="phone2"
+            name="phone2"
+            maxlength="4"
+            placeholder="xxxx"
+            size="4"
+          />
+          -
+          <input
+            type="tel"
+            id="phone3"
+            name="phone3"
+            maxlength="4"
+            placeholder="xxxx"
+            size="4"
+          />
+          <button type="button" onclick="confirmPhoneNum()">중복확인</button
+          ><br />
+          <div id="phoneNumError" name="phoneNumError"></div>
+        </div>
+        <br />
+        <div id="dobContainer">
+          생년월일
+          <!-- <label for="year"></label> -->
+          <select name="year" id="year"></select>
+          년
+          <select name="month" id="month"></select>
+          월
+          <select name="day" id="day"></select>
+          일
+        </div>
+        <br />
+        <button type="button" onclick="handleSubmit()">회원가입</button>
+      </form>
+      <button type="button" onclick="testClick()">test</button>
+    </div>
+  </body>
+</html>
