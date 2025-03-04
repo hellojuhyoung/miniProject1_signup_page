@@ -3,10 +3,40 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+#loginContainer {
+  padding: 10px 10px;
+  border: 2px solid black;
+}
+#inputsContainer div {
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+}
+
+#inputsContainer input {
+  height: 20px;
+}
+
+#inputsContainer button {
+  text-align: center;
+  margin: 10px auto;
+  width: 100%;
 }
 
 #actionContainer {
   display: flex;
   /* flex-direction: row; */
   font-size: 14px;
+}
+
+#actionContainer div {
+  margin: 0 10px;
+  padding: 10px 10px;
+}
+
+#actionContainer a {
+  text-decoration: none;
 }

@@ -11,14 +11,26 @@
     <div id="loginContainer">
       <div id="inputsContainer">
         <form id="loginForm">
-          <input type="text" placeholder="ID" id="id" name="id" required />
-          <input
-            type="text"
-            placeholder="password"
-            id="password"
-            name="password"
-            required
-          />
+          <div id="idTag">
+            아이디<input
+              type="text"
+              placeholder="ID"
+              id="id"
+              name="id"
+              required
+            />
+          </div>
+
+          <div id="pwTag">
+            비밀번호<input
+              type="text"
+              placeholder="password"
+              id="password"
+              name="password"
+              required
+            />
+          </div>
+
           <div id="loginError"></div>
           <button id="signinButton" type="submit">Sign in</button>
         </form>

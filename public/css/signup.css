@@ -1,17 +1,44 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
 #signupContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 10px 10px;
+  border: 2px solid black;
 }
 
-#infoContainer {
+#infoContainer div {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+}
+
+#infoContainer button {
+  margin: 10px auto;
+  display: flex;
   align-items: center;
 }
 
 #infoContainer input {
   margin: 10px;
+}
+
+#signupButton {
+  display: flex;
+  align-items: center;
+  margin: 10px auto;
+}
+
+#emailError,
+#passwordError,
+#phoneNumError {
+  text-align: center;
+  min-height: 20px;
 }
